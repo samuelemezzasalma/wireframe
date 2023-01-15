@@ -3,8 +3,10 @@
     import AwaitBlocks from "$lib/components/AwaitBlocks.svelte";
     import CheckboxInputs from "$lib/components/bindings/CheckboxInputs.svelte";
     import GroupInputs from "$lib/components/bindings/GroupInputs.svelte";
+    import MultipleSelectBindings from "$lib/components/bindings/MultipleSelectBindings.svelte";
     import NumericInputs from "$lib/components/bindings/NumericInputs.svelte";
-    import TextareaInputs from "$lib/components/bindings/TextareaInputs..svx";
+    import SelectBindings from "$lib/components/bindings/SelectBindings.svelte";
+    import TextareaInputs from "$lib/components/bindings/TextareaInputs.svelte";
     import TextInputs from "$lib/components/bindings/TextInputs.svelte";
     import ComponentEvents from "$lib/components/ComponentEvents.svelte";
     import DomEventForwarding from "$lib/components/DomEventForwarding.svelte";
@@ -90,7 +92,9 @@
   <!-- <CheckboxInputs /> -->
   <!-- <GroupInputs /> -->
 
-  <TextareaInputs />
+  <!-- <TextareaInputs /> -->
+  <!-- <SelectBindings /> -->
+  <MultipleSelectBindings />
 
 <!-- --- HTML ---  -->
 <style>

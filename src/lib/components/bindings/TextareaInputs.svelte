@@ -4,7 +4,8 @@
 
 <!-- {@html marked(value)} -->
 
-<textarea value="Some words are *italic*, some are **bold**" />
+Some words are *italic*, some are **bold**
+<textarea bind:value name="" id="" cols="30" rows="10"></textarea>
 
 <style>
 	textarea {
