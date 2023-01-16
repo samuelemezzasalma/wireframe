@@ -1,26 +1,32 @@
 <script lang="ts">
   import ArraysObjects from "$lib/components/Arrays&Objects.svelte";
-    import AwaitBlocks from "$lib/components/AwaitBlocks.svelte";
-    import CheckboxInputs from "$lib/components/bindings/CheckboxInputs.svelte";
-    import GroupInputs from "$lib/components/bindings/GroupInputs.svelte";
-    import MultipleSelectBindings from "$lib/components/bindings/MultipleSelectBindings.svelte";
-    import NumericInputs from "$lib/components/bindings/NumericInputs.svelte";
-    import SelectBindings from "$lib/components/bindings/SelectBindings.svelte";
-    import TextareaInputs from "$lib/components/bindings/TextareaInputs.svelte";
-    import TextInputs from "$lib/components/bindings/TextInputs.svelte";
-    import ComponentEvents from "$lib/components/ComponentEvents.svelte";
-    import DomEventForwarding from "$lib/components/DomEventForwarding.svelte";
-    import DomEvents from "$lib/components/DomEvents.svelte";
-    import EachBlocks from "$lib/components/Each-blocks.svelte";
+  import AwaitBlocks from "$lib/components/AwaitBlocks.svelte";
+  import CheckboxInputs from "$lib/components/bindings/CheckboxInputs.svelte";
+  import GroupInputs from "$lib/components/bindings/GroupInputs.svelte";
+  import MultipleSelectBindings from "$lib/components/bindings/MultipleSelectBindings.svelte";
+  import NumericInputs from "$lib/components/bindings/NumericInputs.svelte";
+  import SelectBindings from "$lib/components/bindings/SelectBindings.svelte";
+  import TextareaInputs from "$lib/components/bindings/TextareaInputs.svelte";
+  import TextInputs from "$lib/components/bindings/TextInputs.svelte";
+  import ComponentEvents from "$lib/components/ComponentEvents.svelte";
+  import DomEventForwarding from "$lib/components/DomEventForwarding.svelte";
+  import DomEvents from "$lib/components/DomEvents.svelte";
+  import EachBlocks from "$lib/components/Each-blocks.svelte";
   import ElseBlocks from "$lib/components/ElseBlocks.svelte";
   import ElseIfBlocks from "$lib/components/ElseIfBlocks.svelte";
-    import EventForwarding from "$lib/components/EventForwarding.svelte";
-    import EventModifiers from "$lib/components/EventModifiers.svelte";
-    import KeyedEachBlocks from "$lib/components/keyed-each-blocks/KeyedEachBlocks.svelte";
+  import EventForwarding from "$lib/components/EventForwarding.svelte";
+  import EventModifiers from "$lib/components/EventModifiers.svelte";
+  import KeyedEachBlocks from "$lib/components/keyed-each-blocks/KeyedEachBlocks.svelte";
+  import Ondestroy from "$lib/components/lifecycle/ondestroy/Ondestroy.svelte";
+  import Onmount from "$lib/components/lifecycle/Onmount.svelte";
+  import Tick from "$lib/components/lifecycle/Tick.svelte";
+  import Update from "$lib/components/lifecycle/Update.svelte";
   import Logic from "$lib/components/Logic.svelte";
   import Props from "$lib/components/Props.svelte";
   import Reactivity from "$lib/components/Reactivity.svelte";
   import SpreadProps from "$lib/components/SpreadProps.svelte";
+  import CustomStores from "$lib/components/stores/custom-stores/CustomStores.svelte";
+  import StoreBindings from "$lib/components/stores/store-bindings/StoreBindings.svelte";
 
   let string = `this string contains some <strong>HTML!!!</strong>`;
 
@@ -30,7 +36,7 @@
   };
 
   // let num = 0;
-  
+
   // $: type = typeof num;
 
   // $: isValid = typeof num == `number`? true : false
@@ -39,9 +45,8 @@
   //   return typeof num == `number`? true : false
   // }
 
-
   function handleMessage(event: any) {
-    alert(event.detail.text)
+    alert(event.detail.text);
   }
 </script>
 
@@ -87,14 +92,23 @@
 
 <!-- <DomEventForwarding on:click={(e) => alert(`clicked`)} /> -->
 
-  <!-- <TextInputs /> -->
-  <!-- <NumericInputs /> -->
-  <!-- <CheckboxInputs /> -->
-  <!-- <GroupInputs /> -->
+<!-- <TextInputs /> -->
+<!-- <NumericInputs /> -->
+<!-- <CheckboxInputs /> -->
+<!-- <GroupInputs /> -->
 
-  <!-- <TextareaInputs /> -->
-  <!-- <SelectBindings /> -->
-  <MultipleSelectBindings />
+<!-- <TextareaInputs /> -->
+<!-- <SelectBindings /> -->
+<!-- <MultipleSelectBindings /> -->
+<!-- <Onmount /> -->
+
+<!-- <Ondestroy /> -->
+<!-- <Update /> -->
+<!-- <Tick /> -->
+<!-- <WritableStores /> -->
+<!-- <ReadableStores /> -->
+<!-- <CustomStores /> -->
+<StoreBindings />
 
 <!-- --- HTML ---  -->
 <style>
